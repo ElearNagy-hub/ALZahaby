@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Al-Dahabi Dental Supplies | شركة الذهبي لمستلزمات وأجهزة الأسنان</title>
+  <meta name="description" content="Expert-led dental supplies in Kasr Al-Ainy, Cairo. Composite materials, autoclaves, dental chairs, handpieces, and home care products. EDA certified. Order via WhatsApp." />
+  <meta name="keywords" content="dental supplies cairo, مستلزمات أسنان, kasr al-ainy dental, composite material egypt, autoclave egypt, dental chair price egypt" />
+  <meta property="og:title" content="Al-Dahabi Dental Supplies — Expert Clinical Supply" />
+  <meta property="og:description" content="Bridging consumables & equipment with expert-led service. Kasr Al-Ainy, Cairo." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+<div class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <span class="whatsapp-tooltip" data-i18n="btnWhatsApp">اطلب بنقرة عبر واتساب</span>
+  <a
+    href="https://wa.me/201000000000?text=Hello%20Al-Dahabi%2C%20I%20have%20an%20inquiry."
+    target="_blank"
+    rel="noopener"
+    class="whatsapp-float-btn"
+    id="whatsapp-float-btn"
+    aria-label="Chat on WhatsApp"
+  >
+    <div class="whatsapp-pulse"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<!-- =====================================================
+     CONSULTATION MODAL
+===================================================== -->
+<div class="modal-overlay" id="consult-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <div class="modal-header">
+      <div class="modal-header-text">
+        <h3 id="modal-title">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display:inline;vertical-align:middle;margin-right:6px;"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+          <span data-i18n="modalTitle">استشر الطبيب: استشارة طبية</span>
+        </h3>
+        <p data-i18n="modalSubtitle">سيقوم فريقنا الطبي (طبيب أسنان وصيدلي) بالرد عليك خلال 15 دقيقة.</p>
+        <p class="modal-product-label" data-i18n="modalProductLabel">بخصوص منتج:</p>
+        <p id="modal-product-name">—</p>
+      </div>
+      <button class="modal-close" onclick="closeConsultModal()" aria-label="Close modal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <form class="modal-body" id="consult-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="consult-name" data-i18n="modalNameLabel">الاسم الكريم *</label>
+          <input type="text" id="consult-name" class="form-control" data-i18n-placeholder="modalNamePlaceholder" placeholder="د. أحمد حسن" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="consult-specialty" data-i18n="modalSpecialtyLabel">التخصص / الصفة</label>
+          <select id="consult-specialty" class="form-control form-control-select">
+            <option value="General Dentist">طبيب أسنان عام</option>
+            <option value="Dental Student">طالب طب أسنان</option>
+            <option value="Endodontist">أخصائي علاج جذور</option>
+            <option value="Orthodontist">أخصائي تقويم أسنان</option>
+            <option value="Oral Surgeon">جراح وجه وفكين</option>
+            <option value="Clinic Owner">صاحب مركز / عيادة</option>
+            <option value="Distributor">موزع / تاجر جملة</option>
+            <option value="Patient">مريض / مستخدم منزلي</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="consult-question" data-i18n="modalQuestionLabel">استفسارك الإكلينيكي *</label>
+        <textarea
+          id="consult-question"
+          class="form-control"
+          rows="4"
+          data-i18n-placeholder="modalQuestionPlaceholder"
+          placeholder="مثال: ما الفرق بين هذا الكومبوزيت وباقي الماركات؟ هل متوافق مع جهاز الكيورنج لدي؟..."
+          required
+        ></textarea>
+      </div>
+    </form>
+
+    <div class="modal-footer">
+      <button type="button" class="btn-modal-cancel" onclick="closeConsultModal()" data-i18n="modalCancel">إلغاء</button>
+      <button type="submit" form="consult-form" class="btn-modal-submit" onclick="submitConsultation(event)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:inline;vertical-align:middle;margin-right:6px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span data-i18n="modalSubmit">إرسال عبر واتساب</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+<header>
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="navbar-inner">
+
+        <!-- Logo -->
+        <a href="#" class="logo" id="logo-link" aria-label="Al-Dahabi Dental Supplies home">
+          <div class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color:#D97706;">
+              <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/>
+              <path d="M5 21h14"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-en">Al-Dahabi Dental</span>
+            <span class="logo-ar" data-i18n="logoSubtitle">شركة الذهبي</span>
+          </div>
+        </a>
+
+        <!-- Desktop Search -->
+        <div class="search-wrapper" role="search">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input
+            type="search"
+            class="search-input"
+            id="main-search"
+            data-i18n-placeholder="searchPlaceholder"
+            placeholder="ابحث بين أكثر من 1,000 منتج (مواد، أجهزة، ماركات)..."
+            aria-label="Search products"
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- Desktop Nav Actions -->
+        <div class="nav-actions">
+          <!-- Language Toggle -->
+          <button class="lang-toggle-btn" id="lang-btn" onclick="toggleLanguage()" aria-label="Toggle Language">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <span data-i18n="langBtn">English</span>
+            <span class="lang-badge" data-i18n="langCode">EN</span>
+          </button>
+
+          <button class="nav-btn nav-btn-outline" id="b2b-nav-btn" onclick="setAudience('b2b'); document.getElementById('catalog').scrollIntoView({behavior:'smooth'})">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v8h4"/><path d="M18 9h2a2 2 0 0 1 2 2v11h-4"/></svg>
+            <span data-i18n="navB2B">بوابة العيادات (B2B)</span>
+          </button>
+          <button class="nav-btn nav-btn-outline" id="student-nav-btn" onclick="setAudience('student'); document.getElementById('catalog').scrollIntoView({behavior:'smooth'})">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.084a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            <span data-i18n="navStudent">بوابة الطلاب</span>
+          </button>
+          <button class="nav-btn nav-btn-gold" id="order-nav-btn" onclick="openConsultModal('general','General Inquiry')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+            <span data-i18n="navAskExpert">استشر خبيراً</span>
+          </button>
+        </div>
+
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+
+      </div><!-- /navbar-inner -->
+    </div><!-- /container -->
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div style="position:relative;">
+        <svg class="search-icon" style="position:absolute;top:50%;transform:translateY(-50%);color:#94A3B8;pointer-events:none;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="search" class="search-input mobile-search-input" id="mobile-search" data-i18n-placeholder="searchPlaceholder" placeholder="ابحث عن منتج..." aria-label="Mobile search" />
+      </div>
+      <div class="mobile-menu-actions">
+        <button class="lang-toggle-btn" style="flex:1;justify-content:center;" onclick="toggleLanguage(); toggleMobileMenu()">
+          <span data-i18n="langBtn">English</span>
+          <span class="lang-badge" data-i18n="langCode">EN</span>
+        </button>
+        <button class="nav-btn nav-btn-outline" style="flex:1;" onclick="setAudience('b2b'); document.getElementById('catalog').scrollIntoView({behavior:'smooth'}); toggleMobileMenu()">
+          <span data-i18n="navB2B">بوابة العيادات</span>
+        </button>
+        <button class="nav-btn nav-btn-outline" style="flex:1;" onclick="setAudience('student'); document.getElementById('catalog').scrollIntoView({behavior:'smooth'}); toggleMobileMenu()">
+          <span data-i18n="navStudent">الطلاب</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- =====================================================
+     HERO SECTION
+===================================================== -->
+<main>
+  <section class="hero" id="hero" aria-label="Hero section">
+    <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-inner">
+
+        <!-- Left: Content -->
+        <div class="hero-content reveal">
+
+          <div class="hero-badge" aria-label="Kasr Al-Ainy District">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="heroBadge">قصر العيني، القاهرة — مسجل بهيئة الدواء المصرية</span>
+          </div>
+
+          <h1 class="hero-title" data-i18n="heroTitle">
+            <span>شركة الذهبي</span> لمستلزمات الأسنان:<br />
+            شريككم الخبير في<br />التميز الإكلينيكي
+          </h1>
+
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            نسد الفجوة بين المستلزمات اليومية والأجهزة والمعدات الكبرى بخدمة يقودها نخبة من أطباء الأسنان والصيادلة، وليس مجرد تجار تقليديين.
+          </p>
+
+          <!-- USP Badges -->
+          <div class="usp-grid" aria-label="Key benefits">
+            <div class="usp-badge">
+              <div class="usp-icon gold">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+              </div>
+              <div class="usp-text">
+                <h4 data-i18n="usp1Title">استشارة طبية متخصصة</h4>
+                <p data-i18n="usp1Desc">أطباء وصيادلة متاحون فوراً</p>
+              </div>
+            </div>
+            <div class="usp-badge">
+              <div class="usp-icon green">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="usp-text">
+                <h4 data-i18n="usp2Title">استلام فوري من قصر العيني</h4>
+                <p data-i18n="usp2Desc">3 شارع فهمي، متفرع من الرشيدي</p>
+              </div>
+            </div>
+            <div class="usp-badge">
+              <div class="usp-icon sky">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="usp-text">
+                <h4 data-i18n="usp3Title">استيراد معتمد من هيئة الدواء</h4>
+                <p data-i18n="usp3Desc">أوراق ترخيص رسمية كاملة</p>
+              </div>
+            </div>
+            <div class="usp-badge">
+              <div class="usp-icon pink">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.084a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+              </div>
+              <div class="usp-text">
+                <h4 data-i18n="usp4Title">أسعار سفراء الطلاب</h4>
+                <p data-i18n="usp4Desc">خصومات حصرية للجامعات</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="hero-ctas">
+            <a
+              href="https://wa.me/201000000000?text=مرحباً%20شركة%20الذهبي"
+              target="_blank"
+              rel="noopener"
+              class="cta-primary"
+              id="hero-wa-btn"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              <span data-i18n="heroCtaWhatsApp">اطلب وناقش فوراً عبر واتساب</span>
+            </a>
+            <button class="cta-secondary" id="hero-consult-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+              <span data-i18n="heroCtaConsult">استشر الطبيب: استشارة مجانية</span>
+            </button>
+          </div>
+
+          <!-- Loyalty Banner -->
+          <div class="loyalty-banner" role="complementary" aria-label="Loyalty program">
+            <div class="loyalty-crown">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="2">
+                <path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/>
+                <path d="M5 21h14"/>
+              </svg>
+            </div>
+            <div class="loyalty-text">
+              <h4 data-i18n="loyaltyTitle">⭐ دائرة ولاء الذهبي</h4>
+              <p data-i18n="loyaltyDesc">اكسب نقاطاً ومكافآت مع كل طلب مستلزمات — تواصل لتفعيل رصيدك.</p>
+            </div>
+          </div>
+
+        </div><!-- /hero-content -->
+
+        <!-- Right: Stats Panel -->
+        <div class="hero-visual reveal" aria-label="Platform statistics">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-number" data-count="1000" data-suffix="+">0+</span>
+              <p class="stat-label" data-i18n="statSkus">صنف متوفر بالمخزن</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="500" data-suffix="+">0+</span>
+              <p class="stat-label" data-i18n="statClinics">عيادة ومركز متعاقد</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="15" data-suffix="دقيقة">0</span>
+              <p class="stat-label" data-i18n="statResponse">سرعة الرد بالدقائق</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="3" data-suffix="">0</span>
+              <p class="stat-label" data-i18n="statHub">شارع فهمي المقر</p>
+            </div>
+          </div>
+          <div class="trust-card">
+            <div class="trust-row">
+              <div class="trust-check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="trust-row-text" data-i18n="trust1">مسجل ومعتمد بهيئة الدواء المصرية (EDA)</span>
+            </div>
+            <div class="trust-row">
+              <div class="trust-check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="trust-row-text" data-i18n="trust2">المؤسسون: طبيب أسنان وصيدلي مرخصان</span>
+            </div>
+            <div class="trust-row">
+              <div class="trust-check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="trust-row-text" data-i18n="trust3">شركة ذات مسؤولية محدودة (ش.ش.و) | سجل تجاري</span>
+            </div>
+            <div class="trust-row">
+              <div class="trust-check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="trust-row-text" data-i18n="trust4">سلسلة إمداد مزدوجة للعيادات والمرضى</span>
+            </div>
+            <div class="trust-row">
+              <div class="trust-check">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span class="trust-row-text" data-i18n="trust5">برنامج سفراء طلاب طب الأسنان مفعل</span>
+            </div>
+          </div>
+        </div><!-- /hero-visual -->
+
+      </div><!-- /hero-inner -->
+    </div><!-- /container -->
+  </section>
+
+  <!-- ===================================================
+       TRUST BAR
+  =================================================== -->
+  <div class="trust-bar" role="complementary" aria-label="Trust indicators">
+    <div class="container">
+      <div class="trust-bar-inner">
+        <div class="trust-item">
+          <div class="trust-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#D97706" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="trust-item-text">
+            <h5 data-i18n="trustBar1Title">معتمد من هيئة الدواء</h5>
+            <p data-i18n="trustBar1Desc">واردات رسمية ومطابقة</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#D97706" stroke-width="2"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11v14H5"/><rect width="7" height="14" x="14" y="3" rx="2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
+          </div>
+          <div class="trust-item-text">
+            <h5 data-i18n="trustBar2Title">توصيل في نفس اليوم</h5>
+            <p data-i18n="trustBar2Desc">منطقة قصر العيني ومحيطها</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#D97706" stroke-width="2"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>
+          </div>
+          <div class="trust-item-text">
+            <h5 data-i18n="trustBar3Title">استشارة إكلينيكية</h5>
+            <p data-i18n="trustBar3Desc">فريق أطباء وصيادلة</p>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#D97706" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="trust-item-text">
+            <h5 data-i18n="trustBar4Title">مكافآت الولاء</h5>
+            <p data-i18n="trustBar4Desc">نقاط مع كل عملية شراء</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       AUDIENCE FILTER BAR
+  =================================================== -->
+  <div class="filter-bar" id="filter-bar" role="navigation" aria-label="Audience filter">
+    <div class="container">
+      <div class="filter-inner">
+        <span class="filter-label" data-i18n="filterLabel">تصفية حسب:</span>
+        <div class="filter-tabs" role="tablist" aria-label="Audience tabs">
+          <button class="filter-tab active" data-audience="b2b" role="tab" aria-selected="true" id="tab-b2b">
+            <span class="filter-tab-dot dot-b2b"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v8h4"/><path d="M18 9h2a2 2 0 0 1 2 2v11h-4"/></svg>
+            <span data-i18n="tabB2B">العيادات الخاصة (B2B)</span>
+          </button>
+          <button class="filter-tab" data-audience="student" role="tab" aria-selected="false" id="tab-student">
+            <span class="filter-tab-dot dot-student"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.084a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+            <span data-i18n="tabStudent">طلاب طب الأسنان</span>
+          </button>
+          <button class="filter-tab" data-audience="patient" role="tab" aria-selected="false" id="tab-patient">
+            <span class="filter-tab-dot dot-patient"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            <span data-i18n="tabPatient">المرضى والعناية المنزلية</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       PRODUCT CATALOG (dynamically rendered)
+  =================================================== -->
+  <section class="catalog" id="catalog" aria-label="Product catalog" role="main">
+    <div class="container">
+      <div id="catalog-container">
+        <!-- Injected by app.js -->
+        <div style="text-align:center;padding:40px;color:#94A3B8;">
+          <p>جاري تحميل الكتالوج...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand Column -->
+      <div>
+        <p class="footer-brand-name-en">Al-Dahabi Dental Supplies</p>
+        <p class="footer-brand-name-ar">شركة الذهبي لمستلزمات وأجهزة الأسنان</p>
+        <p class="footer-tagline" data-i18n="footerTagline">خدمة مهنية يقودها خبراء وقيمة مقابل السعر — نلبي احتياجات العيادات والجامعات من اليوم الأول.</p>
+
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="https://facebook.com/ElzhabyDental" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://wa.me/201000000000" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+
+        <div class="eda-badge" role="img" aria-label="EDA Registered badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <p data-i18n="footerEdaBadge">مسجل بهيئة الدواء المصرية (EDA) | شركة الشخص الواحد</p>
+        </div>
+      </div>
+
+      <!-- Shop Column -->
+      <div>
+        <h4 data-i18n="footerShop">المتجر والأقسام</h4>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="#" onclick="setAudience('b2b');document.getElementById('catalog').scrollIntoView({behavior:'smooth'});return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            <span data-i18n="navB2B">أجهزة ومعدات الأسنان</span>
+          </a></li>
+          <li><a class="footer-link" href="#" onclick="setAudience('b2b');document.getElementById('catalog').scrollIntoView({behavior:'smooth'});return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            <span data-i18n="tabB2B">المواد والمستلزمات</span>
+          </a></li>
+          <li><a class="footer-link" href="#" onclick="setAudience('patient');document.getElementById('catalog').scrollIntoView({behavior:'smooth'});return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            <span data-i18n="tabPatient">منتجات العناية المنزلية</span>
+          </a></li>
+          <li><a class="footer-link" href="#" onclick="setAudience('student');document.getElementById('catalog').scrollIntoView({behavior:'smooth'});return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            <span data-i18n="tabStudent">باقات سفراء الطلاب</span>
+          </a></li>
+        </ul>
+      </div>
+
+      <!-- Services Column -->
+      <div>
+        <h4 data-i18n="footerServices">الخدمات</h4>
+        <ul class="footer-links">
+          <li><a class="footer-link" href="#" onclick="openConsultModal('general','Free Clinical Consultation');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            <span data-i18n="heroCtaConsult">استشارة إكلينيكية مجانية</span>
+          </a></li>
+          <li><a class="footer-link" href="https://wa.me/201000000000?text=طلب%20عرض%20سعر%20جملة" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>عروض أسعار الجملة للعيادات</span>
+          </a></li>
+          <li><a class="footer-link" href="https://wa.me/201000000000?text=طلب%20صيانة%20أجهزة" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>خدمات الصيانة والتركيب</span>
+          </a></li>
+          <li><a class="footer-link" href="https://wa.me/201000000000?text=استفسار%20برنامج%20السفراء" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+            <span>برنامج سفراء الجامعات</span>
+          </a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Column -->
+      <div>
+        <h4 data-i18n="footerContact">بيانات التواصل</h4>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p data-i18n="footerAddress">3 شارع فهمي، متفرع من الرشيدي وبستان الفاضل،<br/>قصر العيني، القاهرة، مصر<br/><em style="font-size:11px;color:rgba(255,255,255,0.5);">قلب سوق قصر العيني لمستلزمات الأسنان</em></p>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <p>واتساب: <a href="https://wa.me/201000000000" target="_blank" rel="noopener">+20 100 000 0000</a><br/><span data-i18n="footerFastResponse">(أسرع استجابة — خلال 15 دقيقة)</span></p>
+        </div>
+        <div class="footer-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <p>فيسبوك: <a href="https://facebook.com/ElzhabyDental" target="_blank" rel="noopener" style="color:#7DD3FC;">/ElzhabyDental</a></p>
+        </div>
+      </div>
+
+    </div><!-- /footer-grid -->
+  </div><!-- /container -->
+
+  <!-- Footer Bottom -->
+  <div style="border-top:1px solid rgba(255,255,255,0.08);">
+    <div class="container">
+      <div class="footer-bottom">
+        <p data-i18n="footerRights">© 2026 شركة الذهبي لمستلزمات الأسنان. جميع الحقوق محفوظة. | المرحلة التجريبية MVP</p>
+        <div class="footer-bottom-badges">
+          <span class="legal-badge" data-i18n="legalSingleLLC">شركة الشخص الواحد</span>
+          <span class="legal-badge" data-i18n="legalEda">مسجل بهيئة الدواء</span>
+          <span class="legal-badge" data-i18n="legalCommercial">سجل تجاري وبطاقة ضريبية</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<!-- App Script -->
+<script src="app.js"></script>
+
+</body>
+</html>
